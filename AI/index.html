@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>TobisAI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ai-container">
+
+    <div class="ai-header">
+      <h1 class="ai-title">TobisAI</h1>
+      <p class="ai-subtitle">Assistente per espressioni, radici e geometria.</p>
+    </div>
+
+    <div class="ai-chat"></div>
+
+    <div class="image-preview-area"></div>
+
+    <div class="input-wrapper">
+
+      <!-- PULSANTI MATEMATICI -->
+      <div class="math-buttons">
+        <button class="math-btn" data-insert="√">√</button>
+        <button class="math-btn" data-insert="^">xⁿ</button>
+        <button class="math-btn" data-insert="/">a/b</button>
+        <button class="math-btn" data-insert="*">×</button>
+        <button class="math-btn" data-insert="/">÷</button>
+      </div>
+
+      <!-- AREA INPUT -->
+      <div class="ai-input-area">
+
+        <button class="img-btn" id="uploadBtn">📁</button>
+        <input type="file" id="imgInput" accept="image/*" multiple hidden>
+
+        <button class="img-btn" id="cameraBtn">📷</button>
+        <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
+
+        <textarea class="ai-input" placeholder="Scrivi un messaggio..."></textarea>
+
+        <button class="ai-send">Invia</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
